@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		6D84E6382D2CC2F5004F8BD3 /* Economic_calendar_bot1.0.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Economic_calendar_bot1.0.py; sourceTree = "<group>"; };
 		6D84E6392D2CF4A5004F8BD3 /* Procfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Procfile; sourceTree = "<group>"; };
+		6D84E63A2D2DA6D3004F8BD3 /* debug.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = debug.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -16,6 +17,7 @@
 			isa = PBXGroup;
 			children = (
 				6D84E6382D2CC2F5004F8BD3 /* Economic_calendar_bot1.0.py */,
+				6D84E63A2D2DA6D3004F8BD3 /* debug.py */,
 				6D84E6392D2CF4A5004F8BD3 /* Procfile */,
 			);
 			sourceTree = "<group>";
