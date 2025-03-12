@@ -6,155 +6,77 @@ BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 52.5\n\nPrevious: 52.8\n\nView Event: https://www.forexfactory.com/calendar/253-us-ism-services-pmi
-DTEND:20250305T150000Z
-DTSTART:20250305T150000Z
-SUMMARY:⁂ USD ISM Services PMI
-UID:141160
-URL:https://www.forexfactory.com/calendar/253-us-ism-services-pmi
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 63.1\n\nPrevious: 67.8\n\nView Event: https://www.forexfactory.com/calendar/53-us-prelim-uom-consumer-sentiment
+DTEND:20250314T140000Z
+DTSTART:20250314T140000Z
+SUMMARY:⁂ USD Prelim UoM Consumer Sentiment
+UID:141260
+URL:https://www.forexfactory.com/calendar/53-us-prelim-uom-consumer-sentiment
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 141K\n\nPrevious: 183K\n\nView Event: https://www.forexfactory.com/calendar/75-us-adp-non-farm-employment-change
-DTEND:20250305T131500Z
-DTSTART:20250305T131500Z
-SUMMARY:⁂ USD ADP Non-Farm Employment Change
-UID:142721
-URL:https://www.forexfactory.com/calendar/75-us-adp-non-farm-employment-change
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calendar/14-ca-boc-rate-statement
+DTEND:20250312T134500Z
+DTSTART:20250312T134500Z
+SUMMARY:⁂ CAD BOC Rate Statement
+UID:141399
+URL:https://www.forexfactory.com/calendar/14-ca-boc-rate-statement
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calendar/7-ez-ecb-press-conference
-DTEND:20250306T134500Z
-DTSTART:20250306T134500Z
-SUMMARY:⁂ EUR ECB Press Conference
-UID:142926
-URL:https://www.forexfactory.com/calendar/7-ez-ecb-press-conference
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.3%\n\nView Event: https://www.forexfactory.com/calendar/87-us-core-ppi-mm
+DTEND:20250313T123000Z
+DTSTART:20250313T123000Z
+SUMMARY:⁂ USD Core PPI m/m
+UID:142621
+URL:https://www.forexfactory.com/calendar/87-us-core-ppi-mm
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 2.65%\n\nPrevious: 2.90%\n\nView Event: https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
-DTEND:20250306T131500Z
-DTSTART:20250306T131500Z
-SUMMARY:⁂ EUR Main Refinancing Rate
-UID:142927
-URL:https://www.forexfactory.com/calendar/12-ez-main-refinancing-rate
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nPrevious: 4.3%\n\nView Event: https://www.forexfactory.com/calendar/236-us-prelim-uom-inflation-expectations
+DTEND:20250314T140000Z
+DTSTART:20250314T140000Z
+SUMMARY:⁂ USD Prelim UoM Inflation Expectations
+UID:141259
+URL:https://www.forexfactory.com/calendar/236-us-prelim-uom-inflation-expectations
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 0.5%\n\nPrevious: -0.1%\n\nView Event: https://www.forexfactory.com/calendar/100-sz-cpi-mm
-DTEND:20250305T073000Z
-DTSTART:20250305T073000Z
-SUMMARY:⁂ CHF CPI m/m
-UID:140730
-URL:https://www.forexfactory.com/calendar/100-sz-cpi-mm
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.5%\n\nView Event: https://www.forexfactory.com/calendar/78-us-cpi-mm
+DTEND:20250312T123000Z
+DTSTART:20250312T123000Z
+SUMMARY:⁂ USD CPI m/m
+UID:142633
+URL:https://www.forexfactory.com/calendar/78-us-cpi-mm
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calendar/825-ez-monetary-policy-statement
-DTEND:20250306T131500Z
-DTSTART:20250306T131500Z
-SUMMARY:⁂ EUR Monetary Policy Statement
-UID:142928
-URL:https://www.forexfactory.com/calendar/825-ez-monetary-policy-statement
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:AUDIO
-TRIGGER:-PT10M
-END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 159K\n\nPrevious: 143K\n\nView Event: https://www.forexfactory.com/calendar/66-us-non-farm-employment-change
-DTEND:20250307T133000Z
-DTSTART:20250307T133000Z
-SUMMARY:⁂ USD Non-Farm Employment Change
-UID:142567
-URL:https://www.forexfactory.com/calendar/66-us-non-farm-employment-change
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:AUDIO
-TRIGGER:-PT10M
-END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 19.7K\n\nPrevious: 76.0K\n\nView Event: https://www.forexfactory.com/calendar/67-ca-employment-change
-DTEND:20250307T133000Z
-DTSTART:20250307T133000Z
-SUMMARY:⁂ CAD Employment Change
-UID:144970
-URL:https://www.forexfactory.com/calendar/67-ca-employment-change
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:AUDIO
-TRIGGER:-PT10M
-END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 50.6\n\nPrevious: 50.9\n\nView Event: https://www.forexfactory.com/calendar/252-us-ism-manufacturing-pmi
-DTEND:20250303T150000Z
-DTSTART:20250303T150000Z
-SUMMARY:⁂ USD ISM Manufacturing PMI
-UID:141136
-URL:https://www.forexfactory.com/calendar/252-us-ism-manufacturing-pmi
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:AUDIO
-TRIGGER:-PT10M
-END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.5%\n\nView Event: https://www.forexfactory.com/calendar/159-us-average-hourly-earnings-mm
-DTEND:20250307T133000Z
-DTSTART:20250307T133000Z
-SUMMARY:⁂ USD Average Hourly Earnings m/m
-UID:142591
-URL:https://www.forexfactory.com/calendar/159-us-average-hourly-earnings-mm
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:AUDIO
-TRIGGER:-PT10M
-END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calendar/717-us-fed-chair-powell-speaks
-DTEND:20250307T173000Z
-DTSTART:20250307T173000Z
-SUMMARY:⁂ USD Fed Chair Powell Speaks
-UID:145840
-URL:https://www.forexfactory.com/calendar/717-us-fed-chair-powell-speaks
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:AUDIO
-TRIGGER:-PT10M
-END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 234K\n\nPrevious: 242K\n\nView Event: https://www.forexfactory.com/calendar/11-us-unemployment-claims
-DTEND:20250306T133000Z
-DTSTART:20250306T133000Z
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 226K\n\nPrevious: 221K\n\nView Event: https://www.forexfactory.com/calendar/11-us-unemployment-claims
+DTEND:20250313T123000Z
+DTSTART:20250313T123000Z
 SUMMARY:⁂ USD Unemployment Claims
-UID:141439
+UID:141440
 URL:https://www.forexfactory.com/calendar/11-us-unemployment-claims
 END:VEVENT
 BEGIN:VEVENT
@@ -162,64 +84,90 @@ BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 4.0%\n\nPrevious: 4.0%\n\nView Event: https://www.forexfactory.com/calendar/56-us-unemployment-rate
-DTEND:20250307T133000Z
-DTSTART:20250307T133000Z
-SUMMARY:⁂ USD Unemployment Rate
-UID:142579
-URL:https://www.forexfactory.com/calendar/56-us-unemployment-rate
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 0.1%\n\nPrevious: 0.4%\n\nView Event: https://www.forexfactory.com/calendar/804-uk-gdp-mm
+DTEND:20250314T070000Z
+DTSTART:20250314T070000Z
+SUMMARY:⁂ GBP GDP m/m
+UID:143701
+URL:https://www.forexfactory.com/calendar/804-uk-gdp-mm
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 6.7%\n\nPrevious: 6.6%\n\nView Event: https://www.forexfactory.com/calendar/57-ca-unemployment-rate
-DTEND:20250307T133000Z
-DTSTART:20250307T133000Z
-SUMMARY:⁂ CAD Unemployment Rate
-UID:144982
-URL:https://www.forexfactory.com/calendar/57-ca-unemployment-rate
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 2.9%\n\nPrevious: 3.0%\n\nView Event: https://www.forexfactory.com/calendar/884-us-cpi-yy
+DTEND:20250312T123000Z
+DTSTART:20250312T123000Z
+SUMMARY:⁂ USD CPI y/y
+UID:142645
+URL:https://www.forexfactory.com/calendar/884-us-cpi-yy
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calendar/622-ez-euro-summit
-DTEND:20250306T111500Z
-DTSTART:20250306T111500Z
-SUMMARY:⁂ EUR Euro Summit
-UID:145851
-URL:https://www.forexfactory.com/calendar/622-ez-euro-summit
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 2.75%\n\nPrevious: 3.00%\n\nView Event: https://www.forexfactory.com/calendar/13-ca-overnight-rate
+DTEND:20250312T134500Z
+DTSTART:20250312T134500Z
+SUMMARY:⁂ CAD Overnight Rate
+UID:141387
+URL:https://www.forexfactory.com/calendar/13-ca-overnight-rate
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calendar/645-us-president-trump-speaks
-DTEND:20250305T021000Z
-DTSTART:20250305T021000Z
-SUMMARY:⁂ USD President Trump Speaks
-UID:145853
-URL:https://www.forexfactory.com/calendar/645-us-president-trump-speaks
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nView Event: https://www.forexfactory.com/calendar/471-ca-boc-press-conference
+DTEND:20250312T143000Z
+DTSTART:20250312T143000Z
+SUMMARY:⁂ CAD BOC Press Conference
+UID:141410
+URL:https://www.forexfactory.com/calendar/471-ca-boc-press-conference
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:AUDIO
 TRIGGER:-PT10M
 END:VALARM
-DTSTAMP:20250306T074257Z
-DESCRIPTION:Impact: High\n\nForecast: 0.6%\n\nPrevious: 0.3%\n\nView Event: https://www.forexfactory.com/calendar/31-au-gdp-qq
-DTEND:20250305T003000Z
-DTSTART:20250305T003000Z
-SUMMARY:⁂ AUD GDP q/q
-UID:141617
-URL:https://www.forexfactory.com/calendar/31-au-gdp-qq
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.4%\n\nView Event: https://www.forexfactory.com/calendar/86-us-ppi-mm
+DTEND:20250313T123000Z
+DTSTART:20250313T123000Z
+SUMMARY:⁂ USD PPI m/m
+UID:142609
+URL:https://www.forexfactory.com/calendar/86-us-ppi-mm
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 7.65M\n\nPrevious: 7.60M\n\nView Event: https://www.forexfactory.com/calendar/578-us-jolts-job-openings
+DTEND:20250311T140000Z
+DTSTART:20250311T140000Z
+SUMMARY:⁂ USD JOLTS Job Openings
+UID:143893
+URL:https://www.forexfactory.com/calendar/578-us-jolts-job-openings
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:AUDIO
+TRIGGER:-PT10M
+END:VALARM
+DTSTAMP:20250312T124257Z
+DESCRIPTION:Impact: High\n\nForecast: 0.3%\n\nPrevious: 0.4%\n\nView Event: https://www.forexfactory.com/calendar/79-us-core-cpi-mm
+DTEND:20250312T123000Z
+DTSTART:20250312T123000Z
+SUMMARY:⁂ USD Core CPI m/m
+UID:142657
+URL:https://www.forexfactory.com/calendar/79-us-core-cpi-mm
 END:VEVENT
 END:VCALENDAR
