@@ -1,15 +1,15 @@
 import discord
+from discord import app_commands
 import requests
-from ics import Calendar
-import asyncio
 import os
+import json
 from github import Github
-from io import StringIO
+from ics import Calendar
 
 # Get the Discord token and GitHub token from environment variables
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')  # Get Discord Token from environment variables
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')    # Get GitHub Token from environment variables
-GITHUB_REPO = 'asellers3rd/Econ-Calendar'   # Replace with your GitHub username/repository
+GITHUB_REPO = 'asellers3rd/RTA'   # Replace with your GitHub username/repository
 
 # Forex Factory ICS URL
 ICS_URL = 'https://nfs.faireconomy.media/ff_calendar_thisweek.ics?version=a594518ff4aa9b1f49e3afb037dbe3c5'
@@ -34,75 +34,82 @@ def filter_high_priority_events():
 
 # Function to upload the filtered ICS file to GitHub
 def upload_to_github(file_path, file_name):
-    # Initialize GitHub API client
     g = Github(GITHUB_TOKEN)
     repo = g.get_repo(GITHUB_REPO)
     
-    # Read the file content
     with open(file_path, 'r') as file:
         content = file.read()
 
-    # Get the path to store the file in the repo (e.g., in the root directory)
     try:
-        # Try to update the file if it already exists
         repo.update_file(file_name, "Updating filtered Forex calendar", content, repo.get_contents(file_name).sha)
     except:
-        # If the file doesn't exist, create a new one
         repo.create_file(file_name, "Adding filtered Forex calendar", content)
 
-# Function to delete previous messages in the channel
-async def delete_previous_messages(channel):
-    # Fetch the last 100 messages from the channel
-    messages = [message async for message in channel.history(limit=100)]
-    
-    # Delete each message one by one
-    for message in messages:
-        try:
-            await message.delete()
-            print(f"Deleted message: {message.content}")
-        except discord.errors.Forbidden:
-            print("Bot does not have permission to delete messages.")
-        except discord.errors.NotFound:
-            print("Message not found, might have already been deleted.")
+# Load config data from the JSON file
+def load_config():
+    try:
+        with open("config.json", "r") as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {"channel_id": None}
 
-# Set up the Discord bot client with the required intents
-client = discord.Client(intents=intents)
+# Save config data to the JSON file
+def save_config(data):
+    with open("config.json", "w") as file:
+        json.dump(data, file, indent=4)
 
-@client.event
-async def on_ready():
-    print(f'Logged in as {client.user}')
+# Create the bot with the necessary intents
+class MyClient(discord.Client):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.tree = app_commands.CommandTree(self)
 
-    # Wait for a short period to ensure the bot is fully ready
-    await asyncio.sleep(3)
+    async def setup_hook(self):
+        # Register slash commands with Discord
+        await self.tree.sync()
 
-    # Get the high-priority events from the .ics file
-    high_priority_events = filter_high_priority_events()
+    async def on_ready(self):
+        print(f'Logged in as {self.user}')
 
-    # Prepare an embed to send to the channel
-    embed = discord.Embed(title="Major Economic Events for the Week", color=0x00ff00)
+client = MyClient(intents=intents)
 
-    for event in high_priority_events:
-        event_details = f"**Time**: {event.begin.format('YYYY-MM-DD HH:mm')}\n**Description**: {event.description}"
-        
-        # Check if adding this event exceeds the character limit for a single field
-        if len(event_details) > 1024:
-            event_details = event_details[:1021] + "..."  # Truncate if too long
-        
-        embed.add_field(name=event.name, value=event_details, inline=False)
+# Slash command to set the channel dynamically
+@client.tree.command(name="setchannel", description="Set the channel to receive Forex updates")
+@app_commands.checks.has_permissions(administrator=True)
+async def set_channel(interaction: discord.Interaction, channel: discord.TextChannel):
+    # Save the channel ID to config.json
+    config = load_config()
+    config["channel_id"] = channel.id
+    save_config(config)
 
-    # Replace with the actual channel ID
-    channel = client.get_channel(992916288030646383)  # replace with actual channel ID
+    await interaction.response.send_message(f"Channel has been set to <#{channel.id}>")
 
-    if channel is None:
-        print("Channel not found or bot does not have access.")
-        await client.close()  # Close bot after the error
+# Command to send the Forex calendar
+@client.tree.command(name="sendforex", description="Send major Forex events to the set channel")
+async def send_forex(interaction: discord.Interaction):
+    config = load_config()
+    channel_id = config.get("channel_id")
+
+    if channel_id is None:
+        await interaction.response.send_message("No channel set. Use `/setchannel` to set a channel.")
         return
 
-    # Delete previous messages
-    await delete_previous_messages(channel)
+    channel = client.get_channel(channel_id)
+    if channel is None:
+        await interaction.response.send_message("The channel is not found.")
+        return
 
-    # Send the embed to the channel
+    # Fetch high-priority events
+    high_priority_events = filter_high_priority_events()
+
+    # Prepare an embed for the Discord message
+    embed = discord.Embed(title="Major Economic Events for the Week", color=0x00ff00)
+    for event in high_priority_events:
+        event_details = f"**Time**: {event.begin.format('YYYY-MM-DD HH:mm')}\n**Description**: {event.description}"
+        embed.add_field(name=event.name, value=event_details, inline=False)
+
     await channel.send(embed=embed)
+    await interaction.response.send_message(f"Sent Forex events to <#{channel.id}>.")
 
     # Save the filtered events to a new .ics file
     filtered_calendar = Calendar()
@@ -117,9 +124,5 @@ async def on_ready():
     # Upload the .ics file to GitHub
     upload_to_github(ics_file_path, 'high_priority_forex_factory.ics')
 
-    # Close the bot after sending the file
-    await client.close()
-
 # Run the bot
 client.run(DISCORD_TOKEN)
-

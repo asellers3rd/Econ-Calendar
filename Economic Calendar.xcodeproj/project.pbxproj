@@ -10,12 +10,16 @@
 		6D84E6382D2CC2F5004F8BD3 /* Economic_calendar_bot1.0.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Economic_calendar_bot1.0.py; sourceTree = "<group>"; };
 		6D84E6392D2CF4A5004F8BD3 /* Procfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Procfile; sourceTree = "<group>"; };
 		6D84E63A2D2DA6D3004F8BD3 /* debug.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = debug.py; sourceTree = "<group>"; };
+		6DE91E682D786C2500272B09 /* RTA Econ calendar.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "RTA Econ calendar.py"; sourceTree = "<group>"; };
+		6DFFAEBC2D849CFF00B4E093 /* MiyagiBot.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = MiyagiBot.py; path = ../MiyagiTrades/MiyagiBot.py; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		6DE1E5652D2B8B6900E515AC = {
 			isa = PBXGroup;
 			children = (
+				6DFFAEBC2D849CFF00B4E093 /* MiyagiBot.py */,
+				6DE91E682D786C2500272B09 /* RTA Econ calendar.py */,
 				6D84E6382D2CC2F5004F8BD3 /* Economic_calendar_bot1.0.py */,
 				6D84E63A2D2DA6D3004F8BD3 /* debug.py */,
 				6D84E6392D2CF4A5004F8BD3 /* Procfile */,
